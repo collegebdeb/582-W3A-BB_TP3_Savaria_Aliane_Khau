@@ -8,6 +8,7 @@
     border-radius: 10rem;
 }
 
-.boutonHero:hover {
+.boutonHero:hover,
+.boutonHero:focus-visible {
     background-color: red;
 }
