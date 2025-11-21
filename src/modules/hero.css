@@ -11,4 +11,5 @@
 .boutonHero:hover,
 .boutonHero:focus-visible {
     background-color: red;
+    cursor: pointer;
 }
