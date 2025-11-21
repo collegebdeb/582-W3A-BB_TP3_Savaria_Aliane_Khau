@@ -1,0 +1,13 @@
+.titreEtDescription {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.boutonHero {
+    width: 13%;
+    border-radius: 10rem;
+}
+
+.boutonHero:hover {
+    background-color: red;
+}

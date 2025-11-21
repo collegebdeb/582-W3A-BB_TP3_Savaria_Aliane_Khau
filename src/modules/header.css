@@ -1,0 +1,23 @@
+.headerFlex {
+  display: flex;
+  justify-content: space-around;
+  background-color: #3d3b3b;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 4rem;
+  margin-top: 10px;
+  padding-top: 1rem;
+}
+
+.headerTitre {
+  display: flex;
+  gap: 15rem;
+  padding-top: 2.5%;
+}
+
+.imgLogo {
+  border-radius: 1rem;
+  padding-top: 1rem;
+  width: 100px;
+  height: 100px;
+}   
