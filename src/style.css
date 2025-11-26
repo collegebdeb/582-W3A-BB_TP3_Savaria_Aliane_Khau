@@ -22,3 +22,11 @@ a {
 a:focus-visible {
     background-color: red;
 }
+
+.timeline{
+    position:absolute;
+    width: 4000px;
+    height: 20px;
+    background-color: aliceblue;
+    top : 400px;
+}
