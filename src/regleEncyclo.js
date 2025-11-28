@@ -11,7 +11,7 @@ function ouvrirFermerRegle () {
         ouvrirRegle = true;
     }
     else {
-        linkRegle.style.display = "none" ;
+        linkRegle.style.display = "none";
         ouvrirRegle = false;
     }
 };
@@ -29,7 +29,7 @@ function ouvrirFermerEncyclo () {
         ouvrirEncyclo = true;
     }
     else {
-        linkEncyclo.style.display = "none" ;
+        linkEncyclo.style.display = "none";
         ouvrirEncyclo = false;
     }
 };
