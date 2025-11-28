@@ -93,7 +93,7 @@ console.log(i.code)
 
 if (i.code == "KeyA" ) {
 Pl_Position = Pl_Position-100
-if(Pl_Position<-14500){Pl_Position=-14500}
+if(Pl_Position<-14000){Pl_Position=-14000}
 }
 
 else if (i.code == "KeyD" ) {
