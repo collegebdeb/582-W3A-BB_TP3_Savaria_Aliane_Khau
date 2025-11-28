@@ -15,9 +15,42 @@
   padding-top: 2.5%;
 }
 
+/* Pour le logo */
 .imgLogo {
   border-radius: 1rem;
   padding-top: 1rem;
   width: 70px;
   height: 70px;
 }   
+
+/* Pour les règles */
+.boutonRegle {
+    text-decoration: none;
+    height: 20px;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.boutonRegle:focus-visible,
+.boutonRegle:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+/* Pour l'encyclopédie */
+.boutonEncyclo {
+  text-decoration: none;
+    height: 20px;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.boutonEncyclo:focus-visible,
+.boutonEncyclo:hover {
+    background-color: red;
+    cursor: pointer;
+}

@@ -1,5 +1,6 @@
 @import "./modules/header.css";
 @import "./modules/hero.css";
+@import "./modules/regleEncyclo.css";
 
 body {
     margin: 0px;

@@ -1,0 +1,62 @@
+/* Regle */
+.instruction {
+    padding-left: 30px;
+    background-color: rgba(48, 45, 45, 0.8);
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    margin-left: 37%;
+    display: none;
+}
+
+/* Encyclopédie */
+.savoir {
+    display: none;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    margin-left: 50%;
+}
+
+.slide-1 {
+    background-color: rgb(107, 165, 216);
+}
+
+.slide-2 {
+    background-color: rgb(35, 73, 107);
+}
+
+.slide-3 {
+    background-color: rgb(22, 79, 129);
+}
+
+.slide-4 {
+    background-color: rgb(7, 39, 68);
+}
+
+/* Contenue du slider */
+.contour {
+    margin: 1.7% 0 0 9.5%;
+    width: 80%;
+    height: 90%;
+    background-color: rgb(153, 204, 106);
+    padding: 10px 0 0 10px;;
+}
+
+.titreEpoque {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+.imageEpoqueTitre {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 10px;
+}
