@@ -1,5 +1,9 @@
+import Swiper from "swiper/bundle";
+import "swiper/css/bundle";
+
 import './style.css';
 import { timeline } from './timeline/timeline.js';
+import "./regleEncyclo.js";
 
 const cercles = document.getElementById("cercles");
 
@@ -9,6 +13,17 @@ const cercles = document.getElementById("cercles");
 timeline(cercles)
 
 
+// Slider
+const swiper = new Swiper(".swiper", {
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: "1",
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
 
 
 
