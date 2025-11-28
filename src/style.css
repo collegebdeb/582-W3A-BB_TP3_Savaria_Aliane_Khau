@@ -23,14 +23,34 @@ a:focus-visible {
     background-color: red;
 }
 
+/* Kelyan Aliane Timeline de la page */
 .timeline{
     position:absolute;
-    width: 4000px;
-    height: 20px;
-    background-color: aliceblue;
-    top : 400px;
+    width: 10000px;
+    height: 10px;
+    background-color: #ffffff;
+    top : 50%;
 }
 
+/* Kelyan Aliane cercle timeline */
+.cercle {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    border: 20px solid #1E90FF;
+}
+
+#cercles{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    position: relative;
+    gap: 700px;
+}
+
+/* ------------------------------------------------------*/
 
 #Canvas_Timeline{
 width: 1200px;
