@@ -21,7 +21,34 @@ body {
     height: 10px;
     background-color: #ffffff;
     top : 50%;
+
+    animation: mon-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
 }
+
+@keyframes mon-animation {
+  0%{
+    background-color: rgb(0, 3, 163) ;
+  }
+
+  30%{
+    background-color: rgb(0, 78, 141);
+  }
+
+  60%{
+    background-color: rgb(0, 119, 155);
+  }
+
+  90%{
+    background-color: rgb(0, 78, 141);
+  }
+
+  100%{
+    background-color: rgb(0, 3, 163) ;
+  }
+}
+
 
 /* Kelyan Aliane cercle timeline */
 .cercle {
@@ -30,8 +57,31 @@ body {
     background-color: #ffffff;
     border-radius: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     border: 20px solid #1E90FF;
+    z-index : 1;
+
 }
+
+.actif {
+    scale: 1.5;
+    transition: width, height, transform 1s;
+}
+
+/* Kelyan Aliane texte cercle timeline */
+.texte_timeline{
+  font-size: 20px;
+  color: black;
+  position: absolute;
+}
+
+
+
+
+
+
+
 
 #cercles{
     display: flex;
