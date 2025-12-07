@@ -5,11 +5,16 @@
 
 .boutonHero {
     width: 13%;
+    height: 30px;
     border-radius: 10rem;
+    margin-bottom: 100px;
 }
 
 .boutonHero:hover,
 .boutonHero:focus-visible {
     background-color: red;
     cursor: pointer;
+    font-size: 14px;
+    width: 14%;
+    height: 35px;
 }

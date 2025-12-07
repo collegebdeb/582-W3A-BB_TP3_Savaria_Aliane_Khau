@@ -7,7 +7,12 @@ import "./regleEncyclo.js";
 
 const cercles = document.getElementById("cercles");
 
+const burger = document.querySelector(".burger");
+const menuNav = document.querySelector(".menuNav");
 
+burger.addEventListener("click", () => {
+  menuNav.classList.toggle("showMenu");
+});
 
 //doit s'executer une fois lors du premier render
 //timeline(cercles)
