@@ -40,8 +40,13 @@ window.addEventListener("resize", (e) => {
 
 
 // variable
-let Pl_Position = -13000 ;
+let Pl_Position = 0 ;
 document.addEventListener("keydown", keypress)
+
+   const img = new Image();
+   img.src = 'src/images/dinosaurMort.jpg'
+
+
 
 
 // initialisation canvas 
@@ -57,7 +62,7 @@ c.width = (window.innerWidth*0.9)
 function Update_Timeline(){
 
 let grad1=ctx.createLinearGradient(0+Pl_Position,0, 16500+Pl_Position,0)
-grad1.addColorStop(0, "blue");
+grad1.addColorStop(0, "black");
 grad1.addColorStop(0.135, "red");
 grad1.addColorStop(0.255, "blue");
 grad1.addColorStop(0.38, "red");
@@ -79,7 +84,7 @@ ctx.fillRect(0+Pl_Position,0,16500,800)
 
 // cube bleu
 ctx.fillStyle = "blue"
-ctx.fillRect(100+Pl_Position,50,500,500)
+ctx.drawImage(img,100+Pl_Position,50,500,500)
 // cube jaune
 ctx.fillStyle = "yellow"
 ctx.fillRect(2000+Pl_Position,50,500,500)
@@ -111,12 +116,12 @@ function keypress(i){
 console.log(i.code)
 
 
-if (i.code == "KeyA" ) {
+if (i.code == "KeyD" ) {
 Pl_Position = Pl_Position-100
 if(Pl_Position<-14000){Pl_Position=-14000}
 }
 
-else if (i.code == "KeyD" ) {
+else if (i.code == "KeyA" ) {
 Pl_Position = Pl_Position+100
 if(Pl_Position>0){Pl_Position=0}
 }
