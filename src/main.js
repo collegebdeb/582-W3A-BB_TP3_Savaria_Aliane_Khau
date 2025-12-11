@@ -225,15 +225,16 @@ document.addEventListener("mousedown", test)
 function test(){
 
 
-if(Mouse_x > 100 && Mouse_x < 215 && Mouse_y > 1500 && Mouse_y < 1630  ){Pl_Position = Pl_Position+100}
-else if(Mouse_x > 1225 && Mouse_x < 1335 && Mouse_y > 1500 && Mouse_y < 1630  ){Pl_Position = Pl_Position-100}
+if(Mouse_x > 30 && Mouse_x < 135 && Mouse_y > 485 && Mouse_y < 590  ){Pl_Position = Pl_Position+125}
+else if(Mouse_x > (body.offsetWidth*0.9)-125 && Mouse_x < (body.offsetWidth*0.9)-25 && Mouse_y > 485 && Mouse_y < 590  ){Pl_Position = Pl_Position-125}
 }
 
 setInterval(Update_Timeline, 10)
 
     document.getElementById("Canvas_Timeline").addEventListener('mousemove', function(event) {
-          Mouse_x = event.clientX;
-          Mouse_y = event.clientY;
+        let rect = c.getBoundingClientRect()
+          Mouse_x = event.clientX - rect.left;
+          Mouse_y = event.clientY - rect.top;
         console.log(Mouse_x,Mouse_y)
          return
         
