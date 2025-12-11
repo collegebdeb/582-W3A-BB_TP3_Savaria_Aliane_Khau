@@ -103,7 +103,7 @@ ctx.fillStyle = "white"
 ctx.fillRect(-10000+Pl_Position,0,120000000000,10000000)
 
 ctx.fillStyle = grad1
-ctx.fillRect(0+Pl_Position,0,20000,800)
+ctx.fillRect(0+Pl_Position,0,20025,800)
 ctx.fillStyle = "white"
 
 
@@ -227,6 +227,8 @@ function test(){
 
 if(Mouse_x > 30 && Mouse_x < 135 && Mouse_y > 485 && Mouse_y < 590  ){Pl_Position = Pl_Position+125}
 else if(Mouse_x > (body.offsetWidth*0.9)-125 && Mouse_x < (body.offsetWidth*0.9)-25 && Mouse_y > 485 && Mouse_y < 590  ){Pl_Position = Pl_Position-125}
+if(Pl_Position<-18100){Pl_Position=-18100}
+if(Pl_Position>0){Pl_Position=0}
 }
 
 setInterval(Update_Timeline, 10)
