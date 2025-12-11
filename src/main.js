@@ -30,11 +30,12 @@ const swiper = new Swiper(".swiper", {
     },
 });
 
-
+let body = document.getElementById("Canvas_Master")
 
 window.addEventListener("resize", (e) => {
-    c.width = (window.innerWidth*0.9);
+    c.width = (body.offsetWidth * 0.9);
     c.height = 600
+    //if (c.width > 1000){c.width = 1000}
 })
 
 
@@ -42,6 +43,8 @@ window.addEventListener("resize", (e) => {
 // variable
 let Pl_Position = -11500 ;
 document.addEventListener("keydown", keypress)
+let Mouse_x
+let Mouse_y
 
 
 
@@ -103,7 +106,7 @@ ctx.fillStyle = grad1
 ctx.fillRect(0+Pl_Position,0,20000,800)
 ctx.fillStyle = "white"
 
-//
+
 
 // big bang
 ctx.drawImage(img1,100+Pl_Position,50,350,350)
@@ -183,6 +186,15 @@ ctx.font = "48px serif"
 ctx.fillText('La pandémie de Covid-19',17950+Pl_Position,475,500)
 ctx.font = "30px serif"
 ctx.fillText("- 2020 à 2023 - ",18080+Pl_Position,550,500)
+
+
+//controle
+
+ctx.fillStyle = "purple"
+ctx.fillRect(25,475,100,100)
+ctx.fillStyle = "yellow"
+ctx.fillRect((body.offsetWidth*0.9)-125,475,100,100)
+
 }
 
 
@@ -204,22 +216,37 @@ if(Pl_Position>0){Pl_Position=0}
 
 else if (i.code == "KeyE" ) {
 console.log(Pl_Position)
+console.log(Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0))
 }
 
+}
+document.addEventListener("mousedown", test) 
+
+function test(){
 
 
-
-
-
-
-
-
+if(Mouse_x > 100 && Mouse_x < 215 && Mouse_y > 1500 && Mouse_y < 1630  ){Pl_Position = Pl_Position+100}
+else if(Mouse_x > 1225 && Mouse_x < 1335 && Mouse_y > 1500 && Mouse_y < 1630  ){Pl_Position = Pl_Position-100}
 }
 
 setInterval(Update_Timeline, 10)
+
+    document.getElementById("Canvas_Timeline").addEventListener('mousemove', function(event) {
+          Mouse_x = event.clientX;
+          Mouse_y = event.clientY;
+        console.log(Mouse_x,Mouse_y)
+         return
+        
+    })
+
+
+
+
 //               0          1         2 
 // Trigger [ [position , message , switch] ]
 let Trigger = [[2500,"jaune",false],[250,"Bleu",false],[-2000,"Vert",false]]
+
+
 
 function TextTrigger(){ 
     console.log()

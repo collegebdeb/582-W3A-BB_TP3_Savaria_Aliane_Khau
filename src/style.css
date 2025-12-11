@@ -8,7 +8,7 @@ body {
     font-size: 1rem;
     background-color: #2b2828;
     color: white;
-
+    width: 100%;
     background-image: url("./images/dinosaurusIllustration.jpg");
     background-repeat: no-repeat;
     background-size: 100% 230%;
@@ -97,10 +97,11 @@ body {
 margin: auto;
 margin-left: 5vw;
 margin-top: 250px;
-border-style: solid;
-border-width: 0px;
-border-color: aqua;
+border-style: outset;
+border-width: 10px;
+border-color: gold;
 margin-bottom: 250px;
+
 }
 
 @media (max-width: 1200px) {
@@ -250,3 +251,6 @@ margin-bottom: 250px;
   }
 }
 
+#Canvas_Master{
+  width: 100%;
+}
