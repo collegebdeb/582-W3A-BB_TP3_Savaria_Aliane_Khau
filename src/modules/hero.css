@@ -8,6 +8,7 @@
     height: 30px;
     border-radius: 10rem;
     margin-bottom: 100px;
+    transition: all 0.3s ease;
 }
 
 .boutonHero:hover,
