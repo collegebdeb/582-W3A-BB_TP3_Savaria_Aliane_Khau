@@ -40,7 +40,7 @@ window.addEventListener("resize", (e) => {
 
 
 // variable
-let Pl_Position = -11900 ;
+let Pl_Position = -11500 ;
 document.addEventListener("keydown", keypress)
 
 
@@ -77,23 +77,30 @@ c.width = (window.innerWidth*0.9)
 
 function Update_Timeline(){
 // gradian
-let grad1=ctx.createLinearGradient(0+Pl_Position,0, 16500+Pl_Position,0)
-grad1.addColorStop(0, "black");
-grad1.addColorStop(0.135, "#3ef044");
-grad1.addColorStop(0.255, "#8f0e0e");
-grad1.addColorStop(0.38, "red");
-grad1.addColorStop(0.5, "blue");
-grad1.addColorStop(0.625, "red");
-grad1.addColorStop(0.745, "blue");
-grad1.addColorStop(0.865, "red");
-grad1.addColorStop(1, "blue");
+let grad1=ctx.createLinearGradient(0+Pl_Position,0, 20000+Pl_Position,0)
+grad1.addColorStop(0.03, "black");
+grad1.addColorStop(0.1, "#3ef044");
+grad1.addColorStop(0.20, "#8f0e0e");
+grad1.addColorStop(0.23, "#8f0e0e");
+grad1.addColorStop(0.3, "white");
+grad1.addColorStop(0.32, "white");
+grad1.addColorStop(0.4, "grey");
+grad1.addColorStop(0.42, "grey");
+grad1.addColorStop(0.5, "#40B6EB");
+grad1.addColorStop(0.52, "#40B6EB");
+grad1.addColorStop(0.59, "#622A2A");
+grad1.addColorStop(0.62, "#622A2A");
+grad1.addColorStop(0.7, "blue");
+grad1.addColorStop(0.8, "red");
+grad1.addColorStop(0.9, "red");
+grad1.addColorStop(0.99, "black");
 
 TextTrigger()
 ctx.fillStyle = "white"
 ctx.fillRect(-10000+Pl_Position,0,120000000000,10000000)
 
 ctx.fillStyle = grad1
-ctx.fillRect(0+Pl_Position,0,16500,800)
+ctx.fillRect(0+Pl_Position,0,20000,800)
 ctx.fillStyle = "white"
 
 //
@@ -120,13 +127,14 @@ ctx.fillText('Extinction des dinosaures',3950+Pl_Position,475,500)
 ctx.font = "30px serif"
 ctx.fillText("- 66 millions d'années av. J.-C. - ",4000+Pl_Position,550,500)
 // antiquité
-
+ctx.fillStyle = "black"
 ctx.drawImage(img4,6000+Pl_Position,50,350,350)
 
 ctx.font = "48px serif"
 ctx.fillText('Antiquité',6100+Pl_Position,475,500)
 ctx.font = "30px serif"
 ctx.fillText("- 3500 av. J.-C. a 476 apr. J.-C - ",6000+Pl_Position,550,500)
+ctx.fillStyle = "white"
 //  Moyen Âge
 
 ctx.drawImage(img5,8000+Pl_Position,50,350,350)
@@ -149,16 +157,32 @@ ctx.fillText("- 1912 - ",10125+Pl_Position,550,500)
 
 ctx.drawImage(img7,12000+Pl_Position,30,300,400)
 ctx.font = "48px serif"
-ctx.fillText('WW1',12118+Pl_Position,475,500)
+ctx.fillText('WW1',12086+Pl_Position,475,500)
 ctx.font = "30px serif"
-ctx.fillText("- 1912 - ",12125+Pl_Position,550,500)
+ctx.fillText("- 1914 à 1918 - ",12050+Pl_Position,550,500)
 
-// cube magenta
-ctx.drawImage(img8,14000+Pl_Position,50,500,500)
-// cube magenta
-ctx.drawImage(img9,16000+Pl_Position,50,500,500)
-// cube magenta
-ctx.drawImage(img10,18000+Pl_Position,50,500,500)
+// WW2
+ctx.drawImage(img8,14000+Pl_Position,30,300,400)
+
+ctx.font = "48px serif"
+ctx.fillText('WW2',14086+Pl_Position,475,500)
+ctx.font = "30px serif"
+ctx.fillText("- 1939 à 1945 - ",14050+Pl_Position,550,500)
+
+// Cold War
+ctx.drawImage(img9,16000+Pl_Position,30,300,400)
+
+ctx.font = "48px serif"
+ctx.fillText('La guerre froide',15995+Pl_Position,475,500)
+ctx.font = "30px serif"
+ctx.fillText("- 1947 à 1991 - ",16050+Pl_Position,550,500)
+
+// covid
+ctx.drawImage(img10,18000+Pl_Position,50,350,350)
+ctx.font = "48px serif"
+ctx.fillText('La pandémie de Covid-19',17950+Pl_Position,475,500)
+ctx.font = "30px serif"
+ctx.fillText("- 2020 à 2023 - ",18080+Pl_Position,550,500)
 }
 
 
