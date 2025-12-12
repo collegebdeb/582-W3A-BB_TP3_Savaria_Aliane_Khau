@@ -77,23 +77,32 @@ body {
   justify-content: center;
 }
 
+#cercles{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    position: relative;
+    gap: 700px;
+    margin-left: 10%;
+}
+
 /* Kelyan Aliane media screen timeline */
 
 @media (width <= 1000px){
 .cercle{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     justify-content: space-between 3px;
  }
 }
 
-/*
-@media (width <= 1000px){
-#cercles{
-margin-left: 60px;
+@media (width <= 986px){
+.cercle{
+    width: 300px;
+    height: 300px;
+    justify-content: space-between 3px;
  }
 }
-*/
 
 /* Kelyan Aliane media screen des textes dans les cercles */
 @media (width <= 1000px){
@@ -104,18 +113,61 @@ margin-left: 60px;
 
 @media (width <= 999px){
  .texte_timeline{
-  font-size: 12px;
+  font-size: 18px;
  }
 }
 
-#cercles{
-    display: flex;
-    justify-content: space-between;
-    width: fit-content;
-    position: relative;
-    gap: 700px;
-    margin-left: 5%;
+
+@media (width <= 1129px){
+ #cercles{
+    margin-left: 35%;
+ }
 }
+
+@media (width <= 1105px){
+ #cercles{
+    margin-left: 35%;
+ }
+}
+
+@media (width <= 1062px){
+ #cercles{
+    margin-left: 25%;
+ }
+}
+
+@media (width <= 626px){
+ #cercles{
+    margin-left: 25%;
+ }
+}
+
+@media (width <= 586px){
+ #cercles{
+    margin-left: 20%;
+ }
+}
+
+@media (width <= 390px){
+ #cercles{
+    margin-left: 7%;
+ }
+}
+
+@media (width <= 300px){
+ #cercles{
+    margin-left: 10%;
+ }
+}
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------------------*/
 
