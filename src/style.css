@@ -107,7 +107,7 @@ body {
 /* Kelyan Aliane media screen des textes dans les cercles */
 @media (width <= 1000px){
  .texte_timeline{
-  font-size: 12px;
+  font-size: 18px;
  }
 }
 
@@ -130,12 +130,6 @@ body {
  }
 }
 
-@media (width <= 1062px){
- #cercles{
-    margin-left: 25%;
- }
-}
-
 @media (width <= 626px){
  #cercles{
     margin-left: 25%;
@@ -148,9 +142,23 @@ body {
  }
 }
 
-@media (width <= 390px){
+
+
+@media (width <= 530px){
  #cercles{
-    margin-left: 7%;
+    margin-left: 23%;
+ }
+}
+
+@media (width <= 400px){
+ #cercles{
+    margin-left: 13%;
+ }
+}
+
+@media (width <= 375px){
+ #cercles{
+    margin-left: 10%;
  }
 }
 
