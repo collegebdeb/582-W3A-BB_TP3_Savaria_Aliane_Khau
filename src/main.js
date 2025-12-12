@@ -80,8 +80,8 @@ let c = document.getElementById("Canvas_Timeline");
 let ctx = c.getContext("2d");
 c.width = (window.innerWidth*0.9)
 // bouton
-const bouton1 = new bouton(150, 475 , 0 , ctx,body);
-const bouton2 = new bouton(150, 475, 1 , ctx, body);
+const bouton1 = new bouton(125, 475 , 0 , ctx,body);
+const bouton2 = new bouton(125, 475, 1 , ctx, body);
 
 
 function Update_Timeline(){
@@ -103,6 +103,9 @@ grad1.addColorStop(0.7, "blue");
 grad1.addColorStop(0.8, "red");
 grad1.addColorStop(0.9, "red");
 grad1.addColorStop(0.99, "black");
+
+
+console.log(holding)
 
 // fond
 
@@ -223,8 +226,10 @@ if(Pl_Position>0){Pl_Position=0}
 
 
 // Cliker avec la souris
-document.addEventListener("mousedown", () => { holding = true}) 
-document.addEventListener("mouseup", () => {holding = false}) 
+document.addEventListener("mouseup", () => {holding = false;}) 
+document.addEventListener("mousedown", () => { holding = true; console.log('mouse down')})  
+document.addEventListener("touchend", () => {holding = false;}) 
+document.addEventListener("touchstart", () => { holding = true; console.log('finger down')} ) 
 
 function clic(){
 
@@ -250,6 +255,16 @@ setInterval(Update_Timeline, 10)
         
     })
 
+
+
+    document.getElementById("Canvas_Timeline").addEventListener('ontouchmove', function(event) {
+        let rect = c.getBoundingClientRect()
+          Mouse_x = event.clientX - rect.left;
+          Mouse_y = event.clientY - rect.top;
+        console.log(Mouse_x,Mouse_y)
+         return
+        
+    })
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
 

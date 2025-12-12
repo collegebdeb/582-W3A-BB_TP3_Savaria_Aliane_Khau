@@ -8,7 +8,7 @@
     width: 500px;
     height: 230px;
     position: absolute;
-    margin-left: 37%;
+    margin-left: 580px;
     display: none;
     border-radius: 10px;
 }
@@ -16,8 +16,8 @@
 /* Pour règle et encyclopédie */
 .fixeSection {
     position: fixed;
-    top: 10%;
-    left: 40%;
+    top: 9.5%;
+    left: 500px;
     z-index: 9999; 
 }
 
@@ -30,7 +30,7 @@
     width: 600px;
     height: 250px;
     position: absolute;
-    margin-left: 50%;
+    margin-left: 590px;
 }
 
 .swiper-slide {
@@ -41,7 +41,7 @@
 
 /* Contenue du slider */
 .contour {
-    margin: 1.7% 0 0 9.5%;
+    margin: 1.7% 0 0 10%;
     width: 80%;
     height: 90%;
     background-color: rgba(64, 48, 153, 0.753);

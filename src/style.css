@@ -199,25 +199,55 @@ margin-bottom: 250px;
 /* Fait par Brandon */
 
 /* Addaptation selon le width */
+
+@media (max-width: 1980px) {
+  .headerFlex {
+    margin-left: 130%;
+  }
+
+  .fixeSection {
+    left: 15%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .fixeSection {
+    top: 100px;
+    left: 0px;
+    z-index: 9999; 
+  }
+
+  .headerFlex {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 30px;
+    z-index: 9999;
+    margin-left: 70%;
+  }
+
+  .titreEtDescription {
+    margin-top: 300px;
+  }
+}
+
 @media (max-width: 1200px) {
 
   /* Pour le header */
   header {
   position: fixed;
-  top: 0;
-  width: 55%;
-  left: 30%;
+  top: 0%;
+  width: 25%;
+  left: 0%;
   padding: 10px 16px;
   z-index: 999; 
   }
 
   .headerFlex {
     width: 80%;
-    margin: 3%;
-    margin-left: 7%;
     flex-wrap: wrap;
     padding: 30px;
     z-index: 9999;
+    margin-left: 3%;
   }
 
   .burger {
@@ -240,7 +270,7 @@ margin-bottom: 250px;
   
   /* Pour le hero */
   .titreEtDescription {
-    margin-top: 200px;
+    margin-top: 300px;
   }
 
   /* Pour l'encyclopédie */
@@ -261,8 +291,8 @@ margin-bottom: 250px;
 
   /* Pour règles et encyclopédie */
   .fixeSection {
-    top: 27%;
-    left: 35%;
+    top: 220px;
+    left: -500px;
     z-index: 9999; 
   }
 }
@@ -273,8 +303,8 @@ margin-bottom: 250px;
   header {
   position: fixed;
   top: 0;
-  width: 45%;
-  left: 10%;
+  width: 35%;
+  left: 3px;
   right: 0%;
   padding: 10px 16px;
   }
@@ -312,8 +342,10 @@ margin-bottom: 250px;
     height: 30px;
   }
 
-  .instruction {
-    margin-left: 30px;
+  .fixeSection {
+    top: 210px;
+    left: 20px;
+    z-index: 9999; 
   }
 }
 
@@ -343,7 +375,8 @@ margin-bottom: 250px;
   }
 
   .fixeSection {
-    top: 225px;
+    top: 205px;
+    left: 0%;
   }
 
   .instruction {
