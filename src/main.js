@@ -55,13 +55,12 @@ let body = document.getElementById("Canvas_Master")
 window.addEventListener("resize", (e) => {
     c.width = (body.offsetWidth * 0.9);
     c.height = 600
-    //if (c.width > 1000){c.width = 1000}
 })
 
 
 
 // variable
-let Pl_Position = -11500 ;
+let Pl_Position = -13750 ;
 document.addEventListener("keydown", keypress)
 let Mouse_x
 let Mouse_y
@@ -120,7 +119,8 @@ grad1.addColorStop(0.8, "red");
 grad1.addColorStop(0.9, "red");
 grad1.addColorStop(0.99, "black");
 
-TextTrigger()
+// fond
+
 ctx.fillStyle = "white"
 ctx.fillRect(-10000+Pl_Position,0,120000000000,10000000)
 
@@ -141,7 +141,7 @@ ctx.fillText("- 13,8 milliards d'années av. J.-C. - ",90+Pl_Position,550,500)
 ctx.drawImage(img2,2000+Pl_Position,50,350,350)
 
 ctx.font = "48px serif"
-ctx.fillText('Apparition des dinosaure',1950+Pl_Position,475,500)
+ctx.fillText('Apparition des dinosaures',1950+Pl_Position,475,500)
 ctx.font = "30px serif"
 ctx.fillText("- 230 à 245 millions d'années av. J.-C. - ",1950+Pl_Position,550,500)
 // asteroide
@@ -182,7 +182,7 @@ ctx.fillText("- 1912 - ",10125+Pl_Position,550,500)
 
 ctx.drawImage(img7,12000+Pl_Position,30,300,400)
 ctx.font = "48px serif"
-ctx.fillText('WW1',12086+Pl_Position,475,500)
+ctx.fillText('Première Guerre mondiale',11905+Pl_Position,475,500)
 ctx.font = "30px serif"
 ctx.fillText("- 1914 à 1918 - ",12050+Pl_Position,550,500)
 
@@ -190,7 +190,7 @@ ctx.fillText("- 1914 à 1918 - ",12050+Pl_Position,550,500)
 ctx.drawImage(img8,14000+Pl_Position,30,300,400)
 
 ctx.font = "48px serif"
-ctx.fillText('WW2',14086+Pl_Position,475,500)
+ctx.fillText('Seconde Guerre mondiale',13910+Pl_Position,475,500)
 ctx.font = "30px serif"
 ctx.fillText("- 1939 à 1945 - ",14050+Pl_Position,550,500)
 
@@ -219,7 +219,7 @@ clic( )
 
 
 
-
+// controle avec A et D 
 function keypress(i){
 console.log(i.code)
 
@@ -234,12 +234,10 @@ Pl_Position = Pl_Position+100
 if(Pl_Position>0){Pl_Position=0}
 }
 
-else if (i.code == "KeyE" ) {
-console.log(Pl_Position)
-console.log(Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0))
 }
 
-}
+
+// Cliker avec la souris
 document.addEventListener("mousedown", () => { holding = true}) 
 document.addEventListener("mouseup", () => {holding = false}) 
 
@@ -253,8 +251,11 @@ if ( holding == true) {
 }
 }
 
+// interval d'update
 setInterval(Update_Timeline, 10)
 
+
+// Position de la souris
     document.getElementById("Canvas_Timeline").addEventListener('mousemove', function(event) {
         let rect = c.getBoundingClientRect()
           Mouse_x = event.clientX - rect.left;
@@ -263,31 +264,6 @@ setInterval(Update_Timeline, 10)
          return
         
     })
-
-
-
-
-//               0          1         2 
-// Trigger [ [position , message , switch] ]
-let Trigger = [[2500,"jaune",false],[250,"Bleu",false],[-2000,"Vert",false]]
-
-
-
-function TextTrigger(){ 
-    console.log()
-    for(let i=0 ; i < Trigger.length ; i++) {
-        
-        if(Trigger[i][0]+Pl_Position > 0 && Trigger[i][0]+Pl_Position < (window.innerWidth*0.9) && Trigger[i][2] == false){ 
-            console.log(Trigger[i][1]);
-            Trigger[i][2] = true;
-        }      
-    }
-}
-
-function gradian(){
-console.log("test")
-
-}
 
 
 

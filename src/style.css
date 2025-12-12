@@ -256,4 +256,11 @@ margin-bottom: 250px;
 
 #Canvas_Master{
   width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+#Canvas_Timeline{
+margin-top: 25px;
+margin-bottom: 50px;
 }
