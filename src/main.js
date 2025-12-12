@@ -27,7 +27,7 @@ const swiper = new Swiper(".swiper", {
 
 
 
-// -----[ Elliot Savaria ]-----------------------------------------------------------------------------------------------------------------\\
+// -----[ Elliot Savaria ]-----------------------------------------------------------------------------------------------------------------//
 //         V V V V V V
 
 let body = document.getElementById("Canvas_Master")
@@ -54,25 +54,25 @@ let holding = false
 
 // image
    const img1 = new Image();
-   img1.src = 'src/images/logoBigBang.png'
+   img1.src = 'images/logoBigBang.png'
    const img2 = new Image();
-   img2.src = 'src/images/DinoLogo.png'
+   img2.src = 'images/DinoLogo.png'
    const img3 = new Image();
-   img3.src = 'src/images/asteroidLogo.png'
+   img3.src = 'images/asteroidLogo.png'
    const img4 = new Image();
-   img4.src = 'src/images/AntiquitéLogo.png'
+   img4.src = 'images/AntiquitéLogo.png'
    const img5 = new Image();
-   img5.src = 'src/images/ChateauxLogo.png'
+   img5.src = 'images/ChateauxLogo.png'
       const img6 = new Image();
-   img6.src = 'src/images/titanicLogo.png'
+   img6.src = 'images/titanicLogo.png'
       const img7 = new Image();
-   img7.src = 'src/images/WW1Logo.jpg'
+   img7.src = 'images/WW1Logo.jpg'
       const img8 = new Image();
-   img8.src = 'src/images/WW2Logo.jpg'
+   img8.src = 'images/WW2Logo.jpg'
       const img9 = new Image();
-   img9.src = 'src/images/ColdWarLogo.jpg'
+   img9.src = 'images/ColdWarLogo.jpg'
       const img10 = new Image();
-   img10.src = 'src/images/CovidLogo.png'
+   img10.src = 'images/CovidLogo.png'
 
 // initialisation canvas 
 
