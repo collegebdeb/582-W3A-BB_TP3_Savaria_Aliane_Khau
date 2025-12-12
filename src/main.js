@@ -4,13 +4,14 @@ import "swiper/css/bundle";
 import './style.css';
 import { timeline } from './timeline/timeline.js';
 import "./regleEncyclo.js";
-
+// ------------------------------------------------------------------------------------------------------------------------------/
 const cercles = document.getElementById("cercles");
 
 //doit s'executer une fois lors du premier render
 //timeline(cercles)
 
 
+// ------------------------------------------------------------------------------------------------------------------------------/
 // Slider
 const swiper = new Swiper(".swiper", {
     direction: "horizontal",
@@ -23,6 +24,9 @@ const swiper = new Swiper(".swiper", {
     },
 });
 
+
+
+// ------------------------------------------------------------------------------------------------------------------------------/
 let body = document.getElementById("Canvas_Master")
 
 window.addEventListener("resize", (e) => {
@@ -38,7 +42,7 @@ let Pl_Position = -11500 ;
 document.addEventListener("keydown", keypress)
 let Mouse_x
 let Mouse_y
-
+let holding = false
 
 
 // image
@@ -183,11 +187,40 @@ ctx.fillText("- 2020 à 2023 - ",18080+Pl_Position,550,500)
 
 //controle
 
-ctx.fillStyle = "purple"
-ctx.fillRect(25,475,100,100)
-ctx.fillStyle = "yellow"
-ctx.fillRect((body.offsetWidth*0.9)-125,475,100,100)
+ctx.lineWidth = 12;
+ctx.beginPath();
+ctx.moveTo(130, 472.5);
+ctx.lineTo(25, 525);
+ctx.lineTo(130, 577.5);
+ctx.strokeStyle = "black"
+ctx.stroke();
 
+ctx.lineWidth = 4;
+ctx.beginPath();
+ctx.moveTo(125, 475);
+ctx.lineTo(25, 525);
+ctx.lineTo(125, 575);
+ctx.strokeStyle = "white"
+ctx.stroke();
+
+ctx.lineWidth = 12;
+ctx.beginPath();
+ctx.moveTo((body.offsetWidth*0.9)-125, 472.5);
+ctx.lineTo((body.offsetWidth*0.9)-25, 525);
+ctx.lineTo((body.offsetWidth*0.9)-125, 577.5);
+ctx.strokeStyle = "black"
+ctx.stroke();
+
+ctx.lineWidth = 4;
+ctx.beginPath();
+ctx.moveTo((body.offsetWidth*0.9)-120, 475);
+ctx.lineTo((body.offsetWidth*0.9)-25, 525);
+ctx.lineTo((body.offsetWidth*0.9)-120, 575);
+ctx.strokeStyle = "white"
+ctx.stroke();
+
+
+clic( )
 }
 
 
@@ -213,15 +246,17 @@ console.log(Math.max(document.documentElement.clientWidth || 0, window.innerWidt
 }
 
 }
-document.addEventListener("mousedown", test) 
+document.addEventListener("mousedown", () => { holding = true}) 
+document.addEventListener("mouseup", () => {holding = false}) 
 
-function test(){
+function clic(){
 
-
-if(Mouse_x > 30 && Mouse_x < 135 && Mouse_y > 485 && Mouse_y < 590  ){Pl_Position = Pl_Position+125}
-else if(Mouse_x > (body.offsetWidth*0.9)-125 && Mouse_x < (body.offsetWidth*0.9)-25 && Mouse_y > 485 && Mouse_y < 590  ){Pl_Position = Pl_Position-125}
-if(Pl_Position<-18100){Pl_Position=-18100}
-if(Pl_Position>0){Pl_Position=0}
+if ( holding == true) {
+    if(Mouse_x > 30 && Mouse_x < 135 && Mouse_y > 485 && Mouse_y < 590  ){Pl_Position = Pl_Position+10}
+    else if(Mouse_x > (body.offsetWidth*0.9)-125 && Mouse_x < (body.offsetWidth*0.9)-25 && Mouse_y > 485 && Mouse_y < 590  ){Pl_Position = Pl_Position-10}
+    if(Pl_Position<-18100){Pl_Position=-18100}
+    if(Pl_Position>0){Pl_Position=0}
+}
 }
 
 setInterval(Update_Timeline, 10)
