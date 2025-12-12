@@ -1,7 +1,7 @@
 header {
   position: fixed;
   top: 0;
-  left: 30%;
+  left: 29%;
   padding: 10px 16px;
   z-index: 9999; 
 }
@@ -41,10 +41,17 @@ header {
 /* Pour le logo */
 .imgLogo {
   margin-left: 10%;
+<<<<<<< HEAD
   height: 45%;
   width: 45%;
+=======
+  background-color: #2c2a2a;
+  border-radius: 1rem;
+  height: 45px;
+  width: 70px;
+>>>>>>> adc5a125539b05e2fdd7f3db6d5b89c48c2a7886
   transition: 0.3s;
-  margin-right: 10%;
+  margin-right: 20%;
   font-size: 12px;
 }
 
@@ -68,6 +75,7 @@ header {
   background-color: #2c2a2a;
   cursor: pointer;
   font-size: 15px;
+  padding-top: 10px;
 }
 
 /* Pour l'encyclopédie */
@@ -91,5 +99,6 @@ header {
   background-color: #2c2a2a;
   cursor: pointer;
   font-size: 15px;
+  padding-top: 10px;
 }
 
