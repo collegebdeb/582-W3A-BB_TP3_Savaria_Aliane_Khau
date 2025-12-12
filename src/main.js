@@ -4,6 +4,7 @@ import "swiper/css/bundle";
 import './style.css';
 import { timeline } from './timeline/timeline.js';
 import "./regleEncyclo.js";
+import bouton from './modules/bouton.js'
 // ------------------------------------------------------------------------------------------------------------------------------/
 const cercles = document.getElementById("cercles");
 
@@ -27,7 +28,29 @@ const swiper = new Swiper(".swiper", {
 
 
 // ------------------------------------------------------------------------------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let body = document.getElementById("Canvas_Master")
+
+
+
+
+
 
 window.addEventListener("resize", (e) => {
     c.width = (body.offsetWidth * 0.9);
@@ -72,7 +95,9 @@ let holding = false
 let c = document.getElementById("Canvas_Timeline");
 let ctx = c.getContext("2d");
 c.width = (window.innerWidth*0.9)
-
+// bouton
+const bouton1 = new bouton(150, 475 , 0 , ctx,body);
+const bouton2 = new bouton(150, 475, 1 , ctx, body);
 
 
 function Update_Timeline(){
@@ -187,39 +212,8 @@ ctx.fillText("- 2020 à 2023 - ",18080+Pl_Position,550,500)
 
 //controle
 
-ctx.lineWidth = 12;
-ctx.beginPath();
-ctx.moveTo(130, 472.5);
-ctx.lineTo(25, 525);
-ctx.lineTo(130, 577.5);
-ctx.strokeStyle = "black"
-ctx.stroke();
-
-ctx.lineWidth = 4;
-ctx.beginPath();
-ctx.moveTo(125, 475);
-ctx.lineTo(25, 525);
-ctx.lineTo(125, 575);
-ctx.strokeStyle = "white"
-ctx.stroke();
-
-ctx.lineWidth = 12;
-ctx.beginPath();
-ctx.moveTo((body.offsetWidth*0.9)-125, 472.5);
-ctx.lineTo((body.offsetWidth*0.9)-25, 525);
-ctx.lineTo((body.offsetWidth*0.9)-125, 577.5);
-ctx.strokeStyle = "black"
-ctx.stroke();
-
-ctx.lineWidth = 4;
-ctx.beginPath();
-ctx.moveTo((body.offsetWidth*0.9)-120, 475);
-ctx.lineTo((body.offsetWidth*0.9)-25, 525);
-ctx.lineTo((body.offsetWidth*0.9)-120, 575);
-ctx.strokeStyle = "white"
-ctx.stroke();
-
-
+bouton1.draw()
+bouton2.draw()
 clic( )
 }
 
@@ -294,3 +288,18 @@ function gradian(){
 console.log("test")
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
