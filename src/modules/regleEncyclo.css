@@ -1,3 +1,5 @@
+/* Fait par Brandon */
+
 /* Regle */
 .instruction {
     padding-left: 30px;
@@ -11,6 +13,7 @@
     border-radius: 10px;
 }
 
+/* Pour règle et encyclopédie */
 .fixeSection {
     position: fixed;
     top: 10%;

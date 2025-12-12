@@ -116,8 +116,12 @@ margin-bottom: 250px;
 
 }
 
+/* Fait par Brandon */
+
+/* Addaptation selon le width */
 @media (max-width: 1200px) {
 
+  /* Pour le header */
   header {
   position: fixed;
   top: 0;
@@ -127,9 +131,7 @@ margin-bottom: 250px;
   z-index: 9999; 
   }
 
-  .titreEtDescription {
-    margin-top: 200px;
-  }
+  
 
   .headerFlex {
     width: 80%;
@@ -157,17 +159,20 @@ margin-bottom: 250px;
   .menuNav.showMenu {
     display: flex;
   }
-
-  .contour {
-    padding: 5px;
+  
+  /* Pour le hero */
+  .titreEtDescription {
+    margin-top: 200px;
   }
 
+  /* Pour l'encyclopédie */
   .swiper {
     width: 500px;
     height: 200px;
     position: absolute;
   }
 
+  /* Pour les règles */
   .instruction {
     padding-left: 30px;
     background-color: rgba(48, 45, 45, 0.8);
@@ -177,6 +182,7 @@ margin-bottom: 250px;
     display: none;
   }
 
+  /* Pour règles et encyclopédie */
   .fixeSection {
     top: 27%;
     left: 35%;
@@ -184,6 +190,7 @@ margin-bottom: 250px;
   }
 }
 
+/* Pour mobile */
 @media (max-width: 600px) {
 
   header {
