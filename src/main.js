@@ -3,15 +3,16 @@ import "swiper/css/bundle";
 
 import './style.css';
 import { timeline } from './timeline/timeline.js';
-import "./regleEncyclo.js";
-// ------------------------------------------------------------------------------------------------------------------------------/
+import "./regleEncyclo.js"; // Kelyane 
+import bouton from './modules/bouton.js' // Elliot
+// ---------[ Kelyane ]---------------------------------------------------------------------------------------------------------------------/
 const cercles = document.getElementById("cercles");
 
 //doit s'executer une fois lors du premier render
 //timeline(cercles)
 
 
-// ------------------------------------------------------------------------------------------------------------------------------/
+// ---[ Brandon ]---------------------------------------------------------------------------------------------------------------------------/
 // Slider
 const swiper = new Swiper(".swiper", {
     direction: "horizontal",
@@ -26,19 +27,25 @@ const swiper = new Swiper(".swiper", {
 
 
 
-// ------------------------------------------------------------------------------------------------------------------------------/
+// -----[ Elliot Savaria ]-----------------------------------------------------------------------------------------------------------------\\
+//         V V V V V V
+
 let body = document.getElementById("Canvas_Master")
+
+
+
+
+
 
 window.addEventListener("resize", (e) => {
     c.width = (body.offsetWidth * 0.9);
     c.height = 600
-    //if (c.width > 1000){c.width = 1000}
 })
 
 
 
 // variable
-let Pl_Position = -11500 ;
+let Pl_Position = -13750 ;
 document.addEventListener("keydown", keypress)
 let Mouse_x
 let Mouse_y
@@ -72,7 +79,9 @@ let holding = false
 let c = document.getElementById("Canvas_Timeline");
 let ctx = c.getContext("2d");
 c.width = (window.innerWidth*0.9)
-
+// bouton
+const bouton1 = new bouton(150, 475 , 0 , ctx,body);
+const bouton2 = new bouton(150, 475, 1 , ctx, body);
 
 
 function Update_Timeline(){
@@ -95,7 +104,8 @@ grad1.addColorStop(0.8, "red");
 grad1.addColorStop(0.9, "red");
 grad1.addColorStop(0.99, "black");
 
-TextTrigger()
+// fond
+
 ctx.fillStyle = "white"
 ctx.fillRect(-10000+Pl_Position,0,120000000000,10000000)
 
@@ -116,7 +126,7 @@ ctx.fillText("- 13,8 milliards d'années av. J.-C. - ",90+Pl_Position,550,500)
 ctx.drawImage(img2,2000+Pl_Position,50,350,350)
 
 ctx.font = "48px serif"
-ctx.fillText('Apparition des dinosaure',1950+Pl_Position,475,500)
+ctx.fillText('Apparition des dinosaures',1950+Pl_Position,475,500)
 ctx.font = "30px serif"
 ctx.fillText("- 230 à 245 millions d'années av. J.-C. - ",1950+Pl_Position,550,500)
 // asteroide
@@ -157,7 +167,7 @@ ctx.fillText("- 1912 - ",10125+Pl_Position,550,500)
 
 ctx.drawImage(img7,12000+Pl_Position,30,300,400)
 ctx.font = "48px serif"
-ctx.fillText('WW1',12086+Pl_Position,475,500)
+ctx.fillText('Première Guerre mondiale',11905+Pl_Position,475,500)
 ctx.font = "30px serif"
 ctx.fillText("- 1914 à 1918 - ",12050+Pl_Position,550,500)
 
@@ -165,7 +175,7 @@ ctx.fillText("- 1914 à 1918 - ",12050+Pl_Position,550,500)
 ctx.drawImage(img8,14000+Pl_Position,30,300,400)
 
 ctx.font = "48px serif"
-ctx.fillText('WW2',14086+Pl_Position,475,500)
+ctx.fillText('Seconde Guerre mondiale',13910+Pl_Position,475,500)
 ctx.font = "30px serif"
 ctx.fillText("- 1939 à 1945 - ",14050+Pl_Position,550,500)
 
@@ -187,45 +197,14 @@ ctx.fillText("- 2020 à 2023 - ",18080+Pl_Position,550,500)
 
 //controle
 
-ctx.lineWidth = 12;
-ctx.beginPath();
-ctx.moveTo(130, 472.5);
-ctx.lineTo(25, 525);
-ctx.lineTo(130, 577.5);
-ctx.strokeStyle = "black"
-ctx.stroke();
-
-ctx.lineWidth = 4;
-ctx.beginPath();
-ctx.moveTo(125, 475);
-ctx.lineTo(25, 525);
-ctx.lineTo(125, 575);
-ctx.strokeStyle = "white"
-ctx.stroke();
-
-ctx.lineWidth = 12;
-ctx.beginPath();
-ctx.moveTo((body.offsetWidth*0.9)-125, 472.5);
-ctx.lineTo((body.offsetWidth*0.9)-25, 525);
-ctx.lineTo((body.offsetWidth*0.9)-125, 577.5);
-ctx.strokeStyle = "black"
-ctx.stroke();
-
-ctx.lineWidth = 4;
-ctx.beginPath();
-ctx.moveTo((body.offsetWidth*0.9)-120, 475);
-ctx.lineTo((body.offsetWidth*0.9)-25, 525);
-ctx.lineTo((body.offsetWidth*0.9)-120, 575);
-ctx.strokeStyle = "white"
-ctx.stroke();
-
-
+bouton1.draw()
+bouton2.draw()
 clic( )
 }
 
 
 
-
+// controle avec A et D 
 function keypress(i){
 console.log(i.code)
 
@@ -240,12 +219,10 @@ Pl_Position = Pl_Position+100
 if(Pl_Position>0){Pl_Position=0}
 }
 
-else if (i.code == "KeyE" ) {
-console.log(Pl_Position)
-console.log(Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0))
 }
 
-}
+
+// Cliker avec la souris
 document.addEventListener("mousedown", () => { holding = true}) 
 document.addEventListener("mouseup", () => {holding = false}) 
 
@@ -259,8 +236,11 @@ if ( holding == true) {
 }
 }
 
+// interval d'update
 setInterval(Update_Timeline, 10)
 
+
+// Position de la souris
     document.getElementById("Canvas_Timeline").addEventListener('mousemove', function(event) {
         let rect = c.getBoundingClientRect()
           Mouse_x = event.clientX - rect.left;
@@ -270,27 +250,17 @@ setInterval(Update_Timeline, 10)
         
     })
 
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
 
 
-//               0          1         2 
-// Trigger [ [position , message , switch] ]
-let Trigger = [[2500,"jaune",false],[250,"Bleu",false],[-2000,"Vert",false]]
 
 
 
-function TextTrigger(){ 
-    console.log()
-    for(let i=0 ; i < Trigger.length ; i++) {
-        
-        if(Trigger[i][0]+Pl_Position > 0 && Trigger[i][0]+Pl_Position < (window.innerWidth*0.9) && Trigger[i][2] == false){ 
-            console.log(Trigger[i][1]);
-            Trigger[i][2] = true;
-        }      
-    }
-}
 
-function gradian(){
-console.log("test")
 
-}
+
+
+
+
+
