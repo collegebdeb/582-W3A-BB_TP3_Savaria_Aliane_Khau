@@ -70,13 +70,12 @@ body {
 
 /* Kelyan Aliane texte dans les cercles de la timeline */
 .texte_timeline{
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   position: absolute;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   justify-content: center;
 }
-
 
 /* Kelyan Aliane media screen timeline */
 
@@ -86,14 +85,28 @@ body {
     height: 200px;
     justify-content: space-between 3px;
  }
+}
+
+/*
+@media (width <= 1000px){
+#cercles{
+margin-left: 60px;
+ }
+}
+*/
+
+/* Kelyan Aliane media screen des textes dans les cercles */
+@media (width <= 1000px){
  .texte_timeline{
-  font-size: 15px;
+  font-size: 12px;
  }
 }
 
-
-
-
+@media (width <= 999px){
+ .texte_timeline{
+  font-size: 12px;
+ }
+}
 
 #cercles{
     display: flex;

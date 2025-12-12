@@ -5,7 +5,6 @@ export const timeline = (cercles) =>{
         element.classList.add('cercle')
         cercles.appendChild(element);
     }
-
 }
 
 // Agrandissement des cercles dans la timeline
