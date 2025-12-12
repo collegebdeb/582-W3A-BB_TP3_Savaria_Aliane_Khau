@@ -202,7 +202,7 @@ margin-bottom: 250px;
 
 @media (max-width: 1980px) {
   .headerFlex {
-    margin-left: 130%;
+    margin-left: 100%;
   }
 
   .fixeSection {
@@ -395,6 +395,6 @@ margin-bottom: 250px;
 }
 #Canvas_Timeline{
 margin-top: 25px;
-margin-bottom: 50px;
+margin-bottom: 100px;
 }
 /* -------------------------------------- */
