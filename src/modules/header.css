@@ -1,3 +1,5 @@
+/* Fait par Brandon */
+
 header {
   position: fixed;
   top: 0;
@@ -6,6 +8,7 @@ header {
   z-index: 9999; 
 }
 
+/* Background header */
 .headerFlex {
   display: flex;
   justify-content: space-between;
@@ -18,12 +21,14 @@ header {
   padding: 0.8rem 1.2rem;
 }
 
+/* Header */
 .headerTitre {
   display: flex;
   gap: 15rem;
   padding-top: 2.5%;
 }
 
+/* Burger du header */
 .burger {
   display: none;
   font-size: 23px;
