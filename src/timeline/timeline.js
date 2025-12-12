@@ -13,7 +13,7 @@ document.addEventListener("scroll", ()=>{
     elements.forEach((elem)=>{
         const pos = elem.getBoundingClientRect().x;
         const milieu = window.innerWidth / 2;
-        if(pos > milieu - 100 && pos < milieu + 100) {
+        if(pos > milieu - 400 && pos < milieu + 400) {
             elem.classList.add("actif");
         } else {
             elem.classList.remove("actif");

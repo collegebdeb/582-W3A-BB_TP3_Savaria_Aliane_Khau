@@ -77,45 +77,107 @@ body {
   justify-content: center;
 }
 
-/* Kelyan Aliane media screen timeline */
-
-@media (width <= 1000px){
-.cercle{
-    width: 200px;
-    height: 200px;
-    justify-content: space-between 3px;
- }
-}
-
-/*
-@media (width <= 1000px){
-#cercles{
-margin-left: 60px;
- }
-}
-*/
-
-/* Kelyan Aliane media screen des textes dans les cercles */
-@media (width <= 1000px){
- .texte_timeline{
-  font-size: 12px;
- }
-}
-
-@media (width <= 999px){
- .texte_timeline{
-  font-size: 12px;
- }
-}
-
 #cercles{
     display: flex;
     justify-content: space-between;
     width: fit-content;
     position: relative;
     gap: 700px;
-    margin-left: 5%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 10%;
 }
+
+/* Kelyan Aliane media screen timeline */
+
+@media (width <= 1000px){
+.cercle{
+    width: 300px;
+    height: 300px;
+    justify-content: space-between 3px;
+ }
+}
+
+@media (width <= 986px){
+.cercle{
+    width: 300px;
+    height: 300px;
+    justify-content: space-between 3px;
+ }
+}
+
+/* Kelyan Aliane media screen des textes dans les cercles */
+@media (width <= 1000px){
+ .texte_timeline{
+  font-size: 18px;
+ }
+}
+
+@media (width <= 999px){
+ .texte_timeline{
+  font-size: 18px;
+ }
+}
+
+
+@media (width <= 1129px){
+ #cercles{
+    margin-left: 35%;
+ }
+}
+
+@media (width <= 1105px){
+ #cercles{
+    margin-left: 35%;
+ }
+}
+
+@media (width <= 626px){
+ #cercles{
+    margin-left: 25%;
+ }
+}
+
+@media (width <= 586px){
+ #cercles{
+    margin-left: 20%;
+ }
+}
+
+
+
+@media (width <= 530px){
+ #cercles{
+    margin-left: 23%;
+ }
+}
+
+@media (width <= 400px){
+ #cercles{
+    margin-left: 13%;
+ }
+}
+
+@media (width <= 375px){
+ #cercles{
+    margin-left: 10%;
+ }
+}
+
+@media (width <= 300px){
+ #cercles{
+    margin-left: 10%;
+ }
+}
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------------------*/
 
@@ -180,16 +242,15 @@ margin-bottom: 250px;
   /* Pour l'encyclopédie */
   .swiper {
     width: 500px;
-    height: 200px;
+    height: 230px;
     position: absolute;
   }
 
   /* Pour les règles */
   .instruction {
     padding-left: 30px;
-    background-color: rgba(48, 45, 45, 0.8);
     width: 300px;
-    height: 200px;
+    height: 230px;
     position: absolute;
     display: none;
   }
@@ -233,8 +294,8 @@ margin-bottom: 250px;
   
   .swiper {
     width: 350px;
-    height: 220px;
-    margin-left: 20px;
+    height: 230px;
+    margin-left: 10px;
   }
 
   .swiper-button-prev {
@@ -268,8 +329,12 @@ margin-bottom: 250px;
     margin-left: 0px;
   }
 
+  .contour {
+    width: 70%;
+  }
+
   .swiper {
-    width: 260px;
+    width: 280px;
     height: 300px;
   }
 
@@ -280,7 +345,7 @@ margin-bottom: 250px;
   .instruction {
     width: 260px;
     height: 200px;
-    margin-left: 5px;
+    margin-left: 4px;
   }
 }
 
