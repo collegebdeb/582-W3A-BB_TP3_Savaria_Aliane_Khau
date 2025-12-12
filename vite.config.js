@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 export default defineConfig({
-    base : '/Test/',
+    base : '/582-W3A-BB_TP3_Savaria_Aliane_Khau/',
 build: {
 emptyOutDir: true,
 rollupOptions: {
