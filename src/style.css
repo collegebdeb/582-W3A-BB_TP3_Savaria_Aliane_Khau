@@ -318,13 +318,6 @@ margin-bottom: 250px;
     margin-top: 300px;
     margin-bottom: 150px;
   }
-
-  .fixeSection {
-    top: 240px;
-    left: 0%;
-    z-index: 9999; 
-    font-size: 13px;
-  }
   
   .swiper {
     width: 350px;
@@ -345,7 +338,12 @@ margin-bottom: 250px;
   .fixeSection {
     top: 210px;
     left: 20px;
+    font-size: 13px;
     z-index: 9999; 
+  }
+
+  .instruction {
+    margin-left: 30px;
   }
 }
 
