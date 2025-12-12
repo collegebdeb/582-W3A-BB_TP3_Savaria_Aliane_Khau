@@ -257,10 +257,10 @@ setInterval(Update_Timeline, 10)
 
 
 
-    document.getElementById("Canvas_Timeline").addEventListener('ontouchmove', function(event) {
+    document.getElementById("Canvas_Timeline").addEventListener('touchmove', (event) => {
         let rect = c.getBoundingClientRect()
-          Mouse_x = event.clientX - rect.left;
-          Mouse_y = event.clientY - rect.top;
+          Mouse_x = event.touches[0].clientX - rect.left;
+          Mouse_y = event.touches[0].clientY - rect.top;
         console.log(Mouse_x,Mouse_y)
          return
         
