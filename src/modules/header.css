@@ -1,9 +1,17 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 30%;
+  padding: 10px 16px;
+  z-index: 9999; 
+}
+
 .headerFlex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #3d3b3b;
-  width: 30%;
+  width: 100%;
   margin-left: 35%;
   border-radius: 4rem;
   margin-top: 10px;
@@ -87,8 +95,3 @@
   font-size: 15px;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  padding: 10px 16px;
-}

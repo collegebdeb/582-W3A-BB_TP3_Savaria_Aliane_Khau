@@ -10,6 +10,13 @@
     border-radius: 10px;
 }
 
+.fixeSection {
+    position: fixed;
+    top: 10%;
+    left: 40%;
+    z-index: 9999; 
+}
+
 /* Encyclopédie */
 .savoir {
     display: none;
