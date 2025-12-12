@@ -68,6 +68,12 @@ body {
     scale: 1.5;
 }
 
+@media (width <= 1000px){
+.actif{
+    scale: 1.2;
+ }
+}
+
 /* Kelyan Aliane texte dans les cercles de la timeline */
 .texte_timeline{
   font-size: 18px;
