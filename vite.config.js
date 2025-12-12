@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 export default defineConfig({
-    base : '/website/',
+    base : '/Test/',
 build: {
 emptyOutDir: true,
 rollupOptions: {
