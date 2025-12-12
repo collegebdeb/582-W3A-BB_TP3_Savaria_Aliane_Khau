@@ -1,21 +1,5 @@
 .titreEtDescription {
     margin-top: 10%;
     margin-left: 10%;
-}
-
-.boutonHero {
-    width: 13%;
-    height: 30px;
-    border-radius: 10rem;
-    margin-bottom: 100px;
-    transition: all 0.3s ease;
-}
-
-.boutonHero:hover,
-.boutonHero:focus-visible {
-    background-color: red;
-    cursor: pointer;
-    font-size: 14px;
-    width: 14%;
-    height: 35px;
+    margin-bottom: 10%;
 }
