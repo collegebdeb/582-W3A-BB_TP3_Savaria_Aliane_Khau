@@ -121,7 +121,7 @@ margin-bottom: 250px;
   header {
   position: fixed;
   top: 0;
-  width: 40%;
+  width: 45%;
   left: 30%;
   padding: 10px 16px;
   z-index: 9999; 
@@ -177,20 +177,6 @@ margin-bottom: 250px;
     display: none;
   }
 
-  .boutonHero {
-    width: 250px;
-    height: 30px;
-    margin-bottom: 100px;
-  }
-
-  .boutonHero:hover,
-  .boutonHero:focus-visible {
-    background-color: red;
-    font-size: 14px;
-    width: 260px;
-    height: 35px;
-  }
-
   .fixeSection {
     top: 27%;
     left: 35%;
@@ -216,6 +202,7 @@ margin-bottom: 250px;
 
   .titreEtDescription {
     margin-top: 300px;
+    margin-bottom: 150px;
   }
 
   .fixeSection {
