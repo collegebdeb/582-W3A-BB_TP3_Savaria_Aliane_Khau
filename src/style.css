@@ -232,16 +232,15 @@ margin-bottom: 250px;
   /* Pour l'encyclopédie */
   .swiper {
     width: 500px;
-    height: 200px;
+    height: 230px;
     position: absolute;
   }
 
   /* Pour les règles */
   .instruction {
     padding-left: 30px;
-    background-color: rgba(48, 45, 45, 0.8);
     width: 300px;
-    height: 200px;
+    height: 230px;
     position: absolute;
     display: none;
   }
@@ -285,8 +284,8 @@ margin-bottom: 250px;
   
   .swiper {
     width: 350px;
-    height: 220px;
-    margin-left: 20px;
+    height: 230px;
+    margin-left: 10px;
   }
 
   .swiper-button-prev {
@@ -320,8 +319,12 @@ margin-bottom: 250px;
     margin-left: 0px;
   }
 
+  .contour {
+    width: 70%;
+  }
+
   .swiper {
-    width: 260px;
+    width: 280px;
     height: 300px;
   }
 
@@ -332,7 +335,7 @@ margin-bottom: 250px;
   .instruction {
     width: 260px;
     height: 200px;
-    margin-left: 5px;
+    margin-left: 4px;
   }
 }
 
