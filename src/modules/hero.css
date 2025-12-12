@@ -1,8 +1,21 @@
 /* Fait par Brandon */
 
 .titreEtDescription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
     margin-top: 10%;
-    margin-left: 5%;
+    margin-left: 27%;
     margin-bottom: 10%;
     font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.719);
+    width: fit-content;
+    padding: 40px;
+    padding-top: 20px;
+}
+
+.titreEtDescription h1 {
+    font-size: 50px;
 }
