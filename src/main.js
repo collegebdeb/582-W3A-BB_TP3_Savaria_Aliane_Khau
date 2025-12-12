@@ -45,7 +45,7 @@ window.addEventListener("resize", (e) => {
 
 
 // variable
-let Pl_Position = -13750 ;
+let Pl_Position = -0 ;
 document.addEventListener("keydown", keypress)
 let Mouse_x
 let Mouse_y
